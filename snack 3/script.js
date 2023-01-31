@@ -1,14 +1,14 @@
 //dichiarazioni costanti
-const N = prompt("inserisci un numero");
+const N = parseInt(prompt("inserisci un numero"));
 
 let i = 0;
 
-while (i == N) {
+while (i < N) {
+
+    const array = [];
 
     let y = 0
-
-    while (y == 10) {
-        const array = [];
+    while (y < 10) {
         const numero = Math.floor(Math.random() * 100) + 1;
         array.push(numero);
 
